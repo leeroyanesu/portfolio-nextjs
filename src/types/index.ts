@@ -16,7 +16,6 @@ export interface IExperienceItem {
   endDate: string;
   isCurrentJob: boolean;
   location: string;
-  shortDescription: string;
   description: string;
 }
 
@@ -48,7 +47,6 @@ export interface IProjectItem {
 export interface IServiceItem {
   title: string;
   icon: IconDefinition;
-  shortDescription: string;
   description: string;
 }
 

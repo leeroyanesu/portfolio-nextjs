@@ -27,20 +27,22 @@ const HomeSection1 = ({ id }: Readonly<{ id: string }>) => {
               <p className="text-base/6 drop_in">Hi 👋 I&apos;m</p>
 
               <p className="text-4xl/normal md:text-5xl/normal font-bold text-[var(--primaryColor)] drop_in">
-                Nikhil Rajput
+                Lee-Roy Chako
               </p>
 
               <p className="text-sm/6 font-medium text-[var(--textColorLight)] drop_in">
-                Software Enginner & Full Stack Developer
+                Software Engineer, Blockchain Developer & Full Stack Developer
               </p>
 
               <p className="text-base/normal mt-8 drop_in">
                 <Balancer>
-                  Welcome to my portfolio! I am a passionate full-stack
-                  developer with 1+ years of experience. I specialize in
-                  creating user-centric software, proficient in both front-end
-                  and back-end development across various platforms. I integrate
-                  cutting-edge technology seamlessly while prioritizing design.
+                Greetings and welcome to my portfolio!
+                 I'm an ardent full-stack developer with over 5 years of experience. 
+                 Specializing in crafting user-centric software, 
+                 I excel in both front-end and back-end development across diverse platforms.
+                  With expertise in blockchain and mobile development, 
+                  I seamlessly integrate cutting-edge technology while placing a
+                   premium on design aesthetics.
                 </Balancer>
               </p>
 
@@ -53,18 +55,18 @@ const HomeSection1 = ({ id }: Readonly<{ id: string }>) => {
             <Column classNames="mt-8 lg:mt-16 drop_out">
               <p className="text-base/6 font-semibold">Follow me here</p>
 
-              <Row classNames="mt-2 gap-2">
+              <Row classNames="mt-5 gap-2">
                 {socialLinks.slice(0, 5).map((link, index) => {
                   return (
                     <Link
                       key={`social-link-${index}`}
                       href={link.url}
                       target="_blank"
-                      className="app__outlined_btn !rounded-full !p-2 lg:!p-3 !aspect-square !border-[var(--textColor)]"
+                      className="app__outlined_btn  !p-1 lg:!p-2 !aspect-square"
                       aria-label={`${link.name}`}
                     >
-                      <span className="text-base/6 text-[var(--whiteColor)]">
-                        <FontAwesomeIcon icon={link.icon} />
+                      <span className="text-[1.5rem] text-[var(--white-color)]">
+                        <FontAwesomeIcon icon={link.icon} size="lg" fixedWidth />
                       </span>
                     </Link>
                   );
@@ -73,17 +75,17 @@ const HomeSection1 = ({ id }: Readonly<{ id: string }>) => {
             </Column>
           </Column>
 
-          <Row classNames="w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] pointer-events-none justify-self-center sm:justify-self-end items-center justify-center rounded-full bg-transparent border-2 border-[var(--primaryColor60)] aspect-sqaure overflow-hidden my-auto drop_out">
-            <Row classNames="w-full h-auto items-center justify-center rounded-full bg-transparent border-[0.8rem] border-[var(--primaryColor30)] aspect-sqaure overflow-hidden pointer-events-none">
+          <Row classNames="w-[23rem] h-[20rem] lg:w-[45rem] lg:h-[43rem] pointer-events-none justify-self-center sm:justify-self-end items-center justify-center aspect-sqaure overflow-hidden my-auto drop_out">
+            <Row classNames="w-full h-auto items-center justify-center bg-transparent aspect-sqaure overflow-hidden pointer-events-none">
               <Image
-                src="/images/profile.webp"
+                src="/images/wallpaper1.png"
                 alt="profile"
-                width={400}
-                height={400}
+                width={800}
+                height={800}
                 sizes="100%"
                 priority
                 placeholder="blur"
-                blurDataURL="/images/profile.webp"
+                blurDataURL="/images/wallpaper1.png"
                 style={{
                   objectFit: "cover",
                   width: "100%",

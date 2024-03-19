@@ -15,9 +15,19 @@ const skills: ISkillListItem[] = [
         icon: "/skills/typescript.svg",
       },
       {
-        title: "Dart",
+        title: "Python",
         level: SkillLevel.Expert,
-        icon: "/skills/dart.svg",
+        icon: "/skills/python.png",
+      },
+      {
+        title: "Clarity",
+        level: SkillLevel.Expert,
+        icon: "/skills/clarity.svg",
+      },
+      {
+        title: "Solidity",
+        level: SkillLevel.Intermediate,
+        icon: "/skills/solidity.svg",
       },
     ],
   },
@@ -35,9 +45,9 @@ const skills: ISkillListItem[] = [
         icon: "/skills/react.svg",
       },
       {
-        title: "Flutter",
+        title: "React Native",
         level: SkillLevel.Expert,
-        icon: "/skills/flutter.svg",
+        icon: "/skills/reactNative.png",
       },
       {
         title: "HTML",
@@ -53,6 +63,11 @@ const skills: ISkillListItem[] = [
         title: "SASS",
         level: SkillLevel.Intermediate,
         icon: "/skills/sass.svg",
+      },
+      {
+        title: "Tailwind",
+        level: SkillLevel.Intermediate,
+        icon: "/skills/tailwind.svg",
       },
     ],
   },
@@ -70,9 +85,9 @@ const skills: ISkillListItem[] = [
         icon: "/skills/express.svg",
       },
       {
-        title: "Nest.js",
+        title: "PHP",
         level: SkillLevel.Begginer,
-        icon: "/skills/nestjs.svg",
+        icon: "/skills/php.png",
       },
     ],
   },
@@ -114,16 +129,6 @@ const skills: ISkillListItem[] = [
   {
     title: "Miscellaneous",
     items: [
-      // {
-      //   title: "WebSockets",
-      //   level: SkillLevel.Intermediate,
-      //   icon: "/images/logical-thinking.png",
-      // },
-      // {
-      //   title: "GetX",
-      //   level: SkillLevel.Expert,
-      //   icon: "/images/logical-thinking.png",
-      // },
       {
         title: "Redux",
         level: SkillLevel.Expert,
@@ -140,9 +145,19 @@ const skills: ISkillListItem[] = [
         icon: "/skills/firebase.svg",
       },
       {
-        title: "Ubuntu",
+        title: "Linux",
         level: SkillLevel.Intermediate,
-        icon: "/skills/ubuntu.png",
+        icon: "/skills/linux.png",
+      },
+      {
+        title: "ChatGPT",
+        level: SkillLevel.Intermediate,
+        icon: "/skills/chatgpt.png",
+      },
+      {
+        title: "MetaQuotes5",
+        level: SkillLevel.Intermediate,
+        icon: "/skills/mql5.png",
       },
     ],
   },

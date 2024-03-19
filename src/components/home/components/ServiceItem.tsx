@@ -8,7 +8,7 @@ const ServiceItem = ({ data }: { data: IServiceItem }) => {
   return (
     <CardBox classNames="p-4 items-center text-center bg-[var(--textColor10)] group min-h-80">
       <Column classNames="items-center justify-between w-full h-full gap-12">
-        <Column classNames="items-center justify-start">
+        <Column classNames="items-center justify-start mt-10">
           <span className="text-3xl/6 md:text-4xl/6 text-[var(--primaryColor)]">
             <FontAwesomeIcon icon={data.icon} />
           </span>
@@ -16,10 +16,10 @@ const ServiceItem = ({ data }: { data: IServiceItem }) => {
           <p className="text-lg/6 font-semibold mt-4">{data.title}</p>
         </Column>
 
-        <span className="w-8 h-1 bg-[var(--primaryColor)] rounded-full"></span>
+        <span className="w-8 h-2 bg-[var(--secondaryColor)] rounded-full"></span>
 
         <p className="text-base/6 font-normal">
-          <Balancer>{data.shortDescription}</Balancer>
+          <Balancer>{data.description.slice(0,80)}...</Balancer>
         </p>
       </Column>
 

@@ -27,9 +27,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Nikhil Rajput",
+  title: "MrLeeC | Leeroy Chako",
   description:
-    "Nikhil Rajput is a proficient Full Stack Developer, skilled in seamlessly integrating front-end and back-end technologies while excelling in design.",
+    "Leeroy Chako is a proficient Mobile, Blockchain & Full Stack Developer, skilled in seamlessly integrating front-end and back-end technologies while excelling in design.",
   robots: {
     index: true,
     follow: true,

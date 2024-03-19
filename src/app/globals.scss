@@ -66,29 +66,29 @@
   --linkColor100: rgba(0, 113, 255, 1);
   --linkColor: rgba(0, 113, 255, 1);
 
-  --primaryColor10: rgba(227, 9, 111, 0.1);
-  --primaryColor20: rgba(227, 9, 111, 0.2);
-  --primaryColor30: rgba(227, 9, 111, 0.3);
-  --primaryColor40: rgba(227, 9, 111, 0.4);
-  --primaryColor50: rgba(227, 9, 111, 0.5);
-  --primaryColor60: rgba(227, 9, 111, 0.6);
-  --primaryColor70: rgba(227, 9, 111, 0.7);
-  --primaryColor80: rgba(227, 9, 111, 0.8);
-  --primaryColor90: rgba(227, 9, 111, 0.9);
-  --primaryColor100: rgba(227, 9, 111, 1);
-  --primaryColor: rgba(227, 9, 111, 1);
+  --primaryColor10: rgba(0, 105, 218, 0.1);
+  --primaryColor20: rgba(0, 105, 218, 0.2);
+  --primaryColor30: rgba(0, 105, 218, 0.3);
+  --primaryColor40: rgba(0, 105, 218, 0.4);
+  --primaryColor50: rgba(0, 105, 218, 0.5);
+  --primaryColor60: rgba(0, 105, 218, 0.6);
+  --primaryColor70: rgba(0, 105, 218, 0.7);
+  --primaryColor80: rgba(0, 105, 218, 0.8);
+  --primaryColor90: rgba(0, 105, 218, 0.9);
+  --primaryColor100: rgb(0, 105, 218);
+  --primaryColor: rgb(0, 123, 255);
 
-  --secondaryColor10: rgba(184, 53, 143, 0.1);
-  --secondaryColor20: rgba(184, 53, 143, 0.2);
-  --secondaryColor30: rgba(184, 53, 143, 0.3);
-  --secondaryColor40: rgba(184, 53, 143, 0.4);
-  --secondaryColor50: rgba(184, 53, 143, 0.5);
-  --secondaryColor60: rgba(184, 53, 143, 0.6);
-  --secondaryColor70: rgba(184, 53, 143, 0.7);
-  --secondaryColor80: rgba(184, 53, 143, 0.8);
-  --secondaryColor90: rgba(184, 53, 143, 0.9);
-  --secondaryColor100: rgba(184, 53, 143, 1);
-  --secondaryColor: rgba(184, 53, 143, 1);
+  --secondaryColor10: rgba(65, 68, 71, 0.1);
+  --secondaryColor20: rgba(65, 68, 71, 0.2);
+  --secondaryColor30: rgba(65, 68, 71, 0.3);
+  --secondaryColor40: rgba(65, 68, 71, 0.4);
+  --secondaryColor50: rgba(65, 68, 71, 0.5);
+  --secondaryColor60: rgba(65, 68, 71, 0.6);
+  --secondaryColor70: rgba(65, 68, 71, 0.7);
+  --secondaryColor80: rgba(255, 134, 48, 0.8);
+  --secondaryColor90: rgba(65, 68, 71, 0.9);
+  --secondaryColor100: rgb(255, 134, 48);
+  --secondaryColor: rgb(255, 108, 0);
 
   --successColor10: rgba(30, 180, 80, 0.1);
   --successColor20: rgba(30, 180, 80, 0.2);
@@ -172,7 +172,7 @@
   --whiteColor80: rgba(255, 255, 255, 0.8);
   --whiteColor90: rgba(255, 255, 255, 0.9);
   --whiteColor100: rgba(255, 255, 255, 1);
-  --whiteColor: rgba(255, 255, 255, 1);
+  --whiteColor: rgb(247, 247, 247);
 
   --primaryGrad: linear-gradient(
     118.18deg,
@@ -322,11 +322,11 @@ h6 {
   width: fit-content;
   outline: none;
   background-color: transparent;
-  border: 1px solid var(--primaryColor);
+  border: 2px solid var(--secondaryColor);
   border-radius: var(--borderRadius);
   padding: 0.75rem 1.5rem;
 
-  color: var(--primaryColor);
+  color: var(--secondaryColor80);
   text-decoration: none;
   font-size: 1rem;
   font-family: inherit;
@@ -349,7 +349,7 @@ h6 {
     position: absolute;
     top: 0;
     left: -100%;
-    background: var(--primaryColor);
+    //background: var(--primaryColor80);
     transition: all 0.5s ease;
     z-index: -1;
   }
@@ -362,7 +362,8 @@ h6 {
   }
 
   &:hover {
-    color: var(--whiteColor);
+    color: var(--primaryColor80);
+    
   }
 
   &:disabled {

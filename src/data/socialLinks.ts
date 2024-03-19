@@ -1,9 +1,9 @@
 import {
-  faGithub,
-  faLinkedin,
+  faGithubSquare,
+  faLinkedinIn,
   faTelegram,
-  faInstagram,
-  faXTwitter,
+  faInstagramSquare,
+  faSquareXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Strings from "@/constants/strings";
@@ -13,13 +13,13 @@ const socialLinks: ISocialLinkItem[] = [
   {
     name: Strings.github,
     url: Strings.githubLink,
-    icon: faGithub,
+    icon: faGithubSquare,
     text: Strings.githubUsername,
   },
   {
     name: Strings.linkedIn,
     url: Strings.linkedInLink,
-    icon: faLinkedin,
+    icon: faLinkedinIn,
     text: Strings.linkedInUsername,
   },
   {
@@ -29,15 +29,9 @@ const socialLinks: ISocialLinkItem[] = [
     text: Strings.telegramUsername,
   },
   {
-    name: Strings.instagram,
-    url: Strings.instagramLink,
-    icon: faInstagram,
-    text: Strings.instagramUsername,
-  },
-  {
     name: Strings.twitter,
     url: Strings.twitterLink,
-    icon: faXTwitter,
+    icon: faSquareXTwitter,
     text: Strings.twitterUsername,
   },
   {

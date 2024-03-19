@@ -3,9 +3,6 @@
 import { useRouter } from "next/navigation";
 import { RepoType, type IProjectItem } from "@/types";
 import { Balancer } from "react-wrap-balancer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEye } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
 import Column from "@/components/core/Column";
@@ -23,11 +20,11 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
 
   return (
     <CardBox
-      classNames="min-w-[calc(100%-2rem)] sm:min-w-[25rem] md:min-w-[28rem] aspect-[3/5] max-h-[30rem] p-4 gap-8 items-center justify-between bg-[var(--textColor10)] group slide_in cursor-pointer"
+      classNames="min-w-[calc(100%-2rem)] sm:min-w-[25rem] md:min-w-[28rem] aspect-[3/5] max-h-[26rem] p-4 gap-8 items-center justify-between bg-[var(--textColor10)] group slide_in cursor-pointer"
       onClick={() => _handleNavigateToPage(project.id)}
     >
       <Column classNames="w-full items-center justify-start">
-        <Row classNames="w-[2.5rem] md:w-[3rem] aspect-square items-center justify-center">
+        <Row classNames="w-[2.5rem] mt-10 md:w-[3rem] aspect-square items-center justify-center">
           <Image
             src={project.icon}
             alt={`project-${project.title}`}
@@ -55,40 +52,12 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
           </p>
         </div>
 
-        <Row classNames="w-full items-center justify-center mt-4 gap-2">
-          {project.githubUrl ? (
-            <Link
-              href={project.githubUrl}
-              aria-label={`${project.title} GitHub URL`}
-              target="_blank"
-              className="app__outlined_btn !rounded-full !p-2 lg:!p-3 !aspect-square !border-[var(--textColor)]"
-            >
-              <FontAwesomeIcon
-                icon={faGithub}
-                className="text-base/6 text-[var(--textColor)]"
-              />
-            </Link>
-          ) : null}
-
-          {project.url ? (
-            <Link
-              href={project.url}
-              aria-label={`${project.title} Project URL`}
-              target="_blank"
-              className="app__outlined_btn !rounded-full !p-2 lg:!p-3 !aspect-square !border-[var(--textColor)]"
-            >
-              <FontAwesomeIcon
-                icon={faEye}
-                className="text-base/6 text-[var(--textColor)]"
-              />
-            </Link>
-          ) : null}
-        </Row>
+        
       </Column>
 
       <Column classNames="w-full items-center">
         <p className="text-center text-base/6">
-          <Balancer>{project.description}</Balancer>
+          <Balancer>{project.description.slice(0,200)}...</Balancer>
         </p>
 
         {project.tags && project.tags.length > 0 ? (

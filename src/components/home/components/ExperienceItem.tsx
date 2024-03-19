@@ -9,7 +9,7 @@ const ExperienceItem = ({ data }: { data: IExperienceItem }) => {
   return (
     <CardBox classNames="p-4 items-center text-center bg-[var(--textColor10)] group min-h-80">
       <Column classNames="items-center justify-between w-full h-full gap-12">
-        <Column classNames="items-center justify-start">
+        <Column classNames="items-center justify-start mt-10">
           <FontAwesomeIcon
             icon={faTrophy}
             className="text-3xl/6 md:text-4xl/6 text-[var(--primaryColor)]"
@@ -39,7 +39,7 @@ const ExperienceItem = ({ data }: { data: IExperienceItem }) => {
         </div>
 
         <p className="text-base/6 font-normal">
-          <Balancer>{data.shortDescription}</Balancer>
+          <Balancer>{data.description.slice(0,80)}</Balancer>
         </p>
       </Column>
 
